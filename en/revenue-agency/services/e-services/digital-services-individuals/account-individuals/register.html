@@ -135,21 +135,21 @@
       <li class="lst-item">
         <div class="row">
           <div class="col-md-8">
-            <h2 class="h3 mrgn-tp-0" id="h-0">Before you register</h2>
-            <p>If you register with a CRA user ID or an Interac sign-in partner, you can use the same credentials to access:</p>
+            <h2 class="h3 mrgn-tp-0" id="h-0">Decide if you need to register</h2>
+            <p>If you have already registered for a different CRA account using a CRA user ID or an Interac sign-in partner, you do not need to register again. You can use the same sign-in information to access the following accounts:</p>
             <ul>
               <li>My Account</li>
               <li>My Business Account</li>
               <li>Represent a Client</li>
               <li>Candidate Profile</li>
             </ul>
-            <details class="mrgn-tp-lg">
+            <!--details class="mrgn-tp-lg">
               <summary>If you already have an account</summary>
               <p>You do not need to register again. Sign in with your existing account credentials. You may be asked to provide the following information:</p>
               <ul>
                 <li>???</li>
               </ul>
-            </details>
+            </details--> 
           </div>
         </div>
       </li>
@@ -165,10 +165,14 @@
                 </ul>
               </li>
               <li><span class="fas fa-check text-success fa-li"></span>Your date of birth</li>
-              <li><span class="fas fa-check text-success fa-li"></span>Your current postal code or ZIP code</li>
-              <li><span class="fas fa-check text-success fa-li"></span>Your <a class="wb-lbx" role="button" aria-controls="tax-return" href="#tax-return">tax <span class="nowrap">returns<span class="mrgn-lft-sm far fa-question-circle"></span></span></a> for the 2 most recent tax years<!--Question: do they need both or just the most recently filed? --></li>
+              <li><span class="fas fa-check text-success fa-li"></span>Your current postal code or ZIP code
+                <ul>
+                  <li>Not required if you live outside of Canada or the United States</li>
+                </ul>
+              </li>
+              <li><span class="fas fa-check text-success fa-li"></span>Your <a class="wb-lbx" role="button" aria-controls="tax-return" href="#tax-return">tax <span class="nowrap">returns<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a> for the 2 most recent tax years<!--Question: do they need both or just the most recently filed? --></li>
             </ul>
-            <p class="mrgn-tp-md">For faster access to <a class="wb-lbx" role="button" aria-controls="services" href="#services">all <span class="nowrap">services<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>, you will also need a mobile device and <strong>one</strong> of the following:</p>
+            <p class="mrgn-tp-md">For faster access to <a class="wb-lbx" role="button" aria-controls="services" href="#services">all <span class="nowrap">services<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>, you will also need a mobile device and <strong>one</strong> of the following:</p>
             <ul>
               <li>Your Canadian passport</li>
               <li>Your Canadian driver's license</li>
@@ -196,18 +200,22 @@
             <details class="mrgn-bttm-lg">
               <summary>Not sure? Find the best options for your situation</summary>
               <p>You can choose one of three ways to sign into your account. If you register for one and later decide you want to use a different sign-in option, you will need to register again.</p>
-              <h3 class="h4">Interac sign-in partner</h3>
-              <p>Using an Interac sign-in partner is a good option if you are registered for online banking with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">sign-in partner banks or credit <span class="nowrap">unions<span class="mrgn-lft-sm far fa-question-circle"></span></span></a> and want to use the same username and password.</p>
               <h3 class="h4">CRA user ID</h3>
-              <p>CRA user ID is a good option if you prefer <strong>not</strong> to use your online banking information. You can create a separate username and password and use CRA sign in to log into your My Account.</p>
+              <!--USE THIS INSTEAD IF WE NEED TO EXPLAIN THAT CRA USER ID IS FOR CRA SIGN IN--> 
+              <!--p>CRA user ID is a good option if you prefer to keep your sign-in credentials <strong>separate</strong> from your banking information. You can create a new username and password and use CRA sign in to log into your My Account.</p-->
+              
+              <p>CRA user ID is a good option if you prefer to create a <strong>separate</strong> username and password from your banking information.</p>
+              <h3 class="h4">Interac sign-in partner</h3>
+              <p>Using an Interac sign-in partner is a good option if you are registered for online banking with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">sign-in partner banks or credit <span class="nowrap">unions<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a> and want to use the <strong>same</strong> username and password.</p>
               <h3 class="h4">Provincial ID</h3>
-              <p>If you already have a BC Services Card or MyAlberta Digital ID, you can use your provincial ID to access most services in My Account. You cannot use a provincial partner with:</p>
+              <p>If you already have a BC Services Card or MyAlberta Digital ID, you can use your provincial ID to access most services in My Account.</p>
+              <p>You cannot use a provincial partner with:</p>
               <ul class="fa-ul">
                 <li><span class="fas fa-times text-danger fa-li"></span>My Business Account or Represent a Client</li>
                 <li><span class="fas fa-times text-danger fa-li"></span>Express Notice of Assessment</li>
                 <li><span class="fas fa-times text-danger fa-li"></span>Auto-fill My Return</li>
               </ul>
-              <p class="mrgn-tp-md">You will not need to gather any documents prior to registration and you will not need to validate your identity if you choose to use your provincial ID to sign in. You will still need to enroll in multi-factor authentication the first time you sign in.</p>
+              <p class="mrgn-tp-md">You will not need to gather other documents or validate your identity if you choose to use your provincial ID to sign in.</p>
               <h3 class="h4">GC Key</h3>
               <p class="mrgn-tp-md">You cannot use GC Key to sign into My Account. </p>
             </details>
@@ -223,8 +231,8 @@
                 <details class="mrgn-tp-md">
                   <summary>Help with CRA User ID</summary>
                   <!--p>Create a new CRA user ID and password that can be used with My Account and other CRA sign-in services.</p-->
-                  <p>How to choose <a class="wb-lbx" role="button" aria-controls="memorable-sq" href="#memorable-sq">memorable security <span class="nowrap">questions<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
-                  <p><a href="">More help with CRA user ID</a></p>
+                  <p>How to choose <a class="wb-lbx" role="button" aria-controls="memorable-sq" href="#memorable-sq">memorable security <span class="nowrap">questions<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</p>
+                  <p class="mrgn-tp-lg"><a href="">More help with CRA user ID</a></p>
                 </details>
               </li>
               <li class="cnjnctn-col"> 
@@ -234,14 +242,14 @@
                 
                 <!--p>Choose this method if you:</p>
 				  <ul>
-				  <li>Are registered for online banking with a <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">bank or credit union sign-in <span class="nowrap">partner<span class="mrgn-lft-sm far fa-question-circle"></span></span></a></li>					
+				  <li>Are registered for online banking with a <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">bank or credit union sign-in <span class="nowrap">partner<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a></li>					
 				  <li>Do not want to remember another username and password</li></ul-->
                 <details class="mrgn-tp-md">
                   <summary>Help with Interac sign-in partners</summary>
-                  <p>You must have an existing account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">Sign-in Partner banks or credit <span class="nowrap">unions<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
-                  <p>Your banking credentials and tax information are <a class="wb-lbx" role="button" aria-controls="sign-in-partner-privacy" href="#sign-in-partner-privacy">never <span class="nowrap">shared<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
-                  <p>On a shared device, <a class="wb-lbx" role="button" aria-controls="shared-device" href="#shared-device">do not use auto-complete for your banking <span class="nowrap">sign in<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.
-                  <p><a href="">More help with Interac sign-in partners</a></p>
+                  <p>You must have an existing account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">Sign-in Partner banks or credit <span class="nowrap">unions<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</p>
+                  <p>Your banking credentials and tax information are <a class="wb-lbx" role="button" aria-controls="sign-in-partner-privacy" href="#sign-in-partner-privacy">never <span class="nowrap">shared<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</p>
+                  <p>On a shared device, <a class="wb-lbx" role="button" aria-controls="shared-device" href="#shared-device">do not use auto-complete for your banking <span class="nowrap">sign in<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.
+                  <p class="mrgn-tp-lg"><a href="">More help with Interac sign-in partners</a></p>
                   </p>
                 </details>
               </li>
@@ -253,21 +261,20 @@
 				  <li>Need immediate access to limited services</li>
 				  <li>Do not want to use auto-fill my return</li></ul-->
                 <details class="mrgn-tp-md">
-                  <summary>Help with provincial sign-in partners</summary>
+                  <summary>Help with provincial ID</summary>
                   <!--p>Currently, only BC Services Card or MyAlberta Digital ID are supported.</p-->
-                  <p>You must have an account with the province's website to register this way.</p>
-                  <p>Supported provincial partners:</p>
+                  <p>To register this way, you must have an account with one of our supported provincial partners:</p>
                   <ul class="mrgn-bttm-md">
                     <li>BC Services Card</li>
                     <li>MyAlberta Digital ID</li>
                   </ul>
-                  <p class="mrgn-tp-md">You will not need to gather any documents prior to registration and you will not need to validate your identity if you choose to use your provincial ID to sign in. You will still need to enroll in multi-factor authentication the first time you sign in.</p>
                   <p>You cannot use a provincial partner with:</p>
                   <ul class="fa-ul">
                     <li><span class="fas fa-times text-danger fa-li"></span>My Business Account or Represent a Client</li>
                     <li><span class="fas fa-times text-danger fa-li"></span>Express Notice of Assessment</li>
                     <li><span class="fas fa-times text-danger fa-li"></span>Auto-fill My Return</li>
                   </ul>
+                  <p class="mrgn-tp-md">You will not need to gather other documents or validate your identity if you choose to use your provincial ID to sign in.</p>
                   <p class="mrgn-tp-lg"><a href="">More help with provincial ID</a></p>
                   <!--details>
                     <summary>View list of provincial partners</summary>
@@ -291,15 +298,17 @@
               <li class="cnjnctn-col">
                 <h3 class="h4 mrgn-tp-sm text-muted">Submit a photo of yourself and your ID document <span class="wb-inv">Option 1 of 2</span></h3>
                 <p>You can use the Interac document verification service to validate your identity immediately.</p>
-                <p>Use a mobile device to take a real-time picture of yourself and an <a class="wb-lbx" role="button" aria-controls="accepted-id" href="#accepted-id">accepted identification <span class="nowrap">document<span class="mrgn-lft-sm far fa-question-circle"></span></span></a> to validate your identity.</p>
+                <p>Use a mobile device to take a real-time picture of yourself and an <a class="wb-lbx" role="button" aria-controls="accepted-id" href="#accepted-id">accepted identification <span class="nowrap">document<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</p>
                 <p>You must be 16 years of age or older to use this service.</p>
               </li>
               <li class="cnjnctn-col">
                 <h3 class="h4 mrgn-tp-sm text-muted">Wait for your CRA security code <span class="wb-inv">Option 2 of 2</span></h3>
                 <p>If you can't use the document verification service, a CRA security code will be sent to you within <strong>7 to 14 days</strong>.</p>
-                <p>Before the expiry date, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">sign in to My Account</a> and follow the instructions to enter the CRA security code.</p>
+                <p>You will need to sign into your My Account and enter your security code before it expires.</p>
+                
+                <!--p>Before the expiry date, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">sign in to My Account</a> and follow the instructions to enter the CRA security code.</p>
                 <h4 id="new-code" class="h5"> Get a new CRA security code </h4>
-                <p>If your CRA security code expires, you will have to <a href="">get a new <span class="wb-inv">security code</span><span aria-hidden="true">one</span></a>.</p>
+                <p>If your CRA security code expires, you will have to <a href="">get a new <span class="wb-inv">security code</span><span aria-hidden="true">one</span></a>.</p--> 
               </li>
             </ul>
             <details id="limited-access" class="mrgn-bttm-xl mrgn-tp-lg">
@@ -327,18 +336,18 @@
               <li class="cnjnctn-col">
                 <h3 class="h4 mrgn-tp-sm text-muted">By phone <span class="wb-inv">Option 1 of 2</span></h3>
                 <!--switch to single sentence, with ex/hide for more details-->
-                <p>You will need to provide at least one cell or landline number. You will be <a class="wb-lbx" role="button" aria-controls="mfa-phone" href="#mfa-phone">sent a one-time <span class="nowrap">passcode<span class="mrgn-lft-sm far fa-question-circle"></span></span></a> that must be entered when you sign in to our online services.</p>
+                <p>You will need to provide at least one cell or landline number. You will be <a class="wb-lbx" role="button" aria-controls="mfa-phone" href="#mfa-phone">sent a one-time <span class="nowrap">passcode<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a> that must be entered when you sign in to our online services.</p>
               </li>
               <li class="cnjnctn-col">
                 <h3 class="h4 mrgn-tp-sm text-muted">With passcode grid <span class="wb-inv">Option 2 of 2</span></h3>
-                <p>The system will generate a unique <a class="wb-lbx" role="button" aria-controls="mfa-grid" href="#mfa-grid">passcode <span class="nowrap">grid<span class="mrgn-lft-sm far fa-question-circle"></span></span></a> that you will need to save or print. You will use this grid every time you sign in to our online services.</p>
+                <p>The system will generate a unique <a class="wb-lbx" role="button" aria-controls="mfa-grid" href="#mfa-grid">passcode <span class="nowrap">grid<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a> that you will need to save or print. You will use this grid every time you sign in to our online services.</p>
               </li>
             </ul>
             <details class="mrgn-tp-lg">
               <summary>Help with one-time passcode</summary>
               <p>Muti-factor authentication (MFA) increases the security of the CRA's online services by requiring users to enter a one-time passcode in addition to their password. MFA is mandatory for all users who wish to use the CRA sign-in services.</p>
-              <p>If your account becomes locked due to entering the wrong passcode too many times, <a href="">contact us</a> to have your account unlocked.</p>
-              <p class="mrgn-tp-md"><a href="">More help with multi-factor authentication</a></p>
+              <p>If your account becomes locked due to entering the wrong passcode too many times, <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#prs-01">contact us by phone</a> to have your account unlocked.</p>
+              <p class="mrgn-tp-md"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html">More help with multi-factor authentication</a></p>
             </details>
           </div>
         </div>
@@ -355,7 +364,11 @@
               </li>
               <li class="cnjnctn-col">
                 <h3 class="h4 mrgn-tp-sm text-muted">CRA security code <span class="wb-inv">Option 2 of 2</span></h3>
-                <p>After you recieve your CRA security code in the mail, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">sign into My Account</a> and enter your code before the <a class="wb-lbx" role="button" aria-controls="expired-code" href="#expired-code"><span class="wb-inv">CRA security code</span> expiry <span class="nowrap">date<span class="mrgn-lft-sm far fa-question-circle"></span></span></a>.</p>
+                <p>After you receive your CRA security code in the mail, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">sign into My Account</a> and enter your code before it expires.</p>
+                <details>
+                  <summary>Get a new security code</summary>
+                  <p>If your code expires or has not arrived after waiting 14 days, you can <a href="">get a new one</a>.</p>
+                </details>
               </li>
             </ul>
           </div>
@@ -400,33 +413,52 @@
   </div>
   <div class="well brdr-0 brdr-rds-0 mrgn-tp-lg">
     <section class="container gc-srvinfo">
-      <h2 class="mrgn-tp-0">My Account help</h2>
-      <div class="row wb-eqht-grd">
-        <div class="col-sm-6 ">
-          <h3 class="mrgn-tp-0"><a href="../cra-login-services/get-security-code.html">Get a security code</a></h3>
-          <p>Get a new security code if you lost it, it expired, or you never got one when you registered.</p>
+      <h2 class="mrgn-tp-0">Information and help</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3 class="mrgn-tp-0"><a href="#">Help guide for My Account</a></h3>
+          <p>Understand and complete certan tasks in My Account, glossary of terms, troubleshooting issues</p>
         </div>
         <div class="col-sm-6">
-          <h3 class="mrgn-tp-0"><a href="../cra-login-services/recover-account.html">Recover my credential information</a></h3>
-          <p>If you have been locked out or cannot remember your password.</p>
+          <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/about-account.html">About My Account</a></h3>
+          <p>List of services provided, online hours of availability, privacy commitments, and browser requirements</p>
+        </div>
+      </div>
+      <h3>Common issues</h3>
+      <div class="row">
+        <div class="col-sm-6">
+          <details>
+            <summary>Registration problem #1</summary>
+            <p>Content here</p>
+          </details>
+          <details>
+            <summary>Registration problem #2</summary>
+            <p>Content here</p>
+          </details>
         </div>
         <div class="col-sm-6">
-          <h3 class="mrgn-tp-0"><a href="#">Contact us for help with My Account</a></h3>
-          <p>Call the CRA with any questions for answers not already provided here.</p>
+          <details>
+            <summary>Registration problem #3</summary>
+            <p>Content here</p>
+          </details>
+          <details>
+            <summary>Registration problem #1</summary>
+            <p>Content here</p>
+          </details>
         </div>
       </div>
     </section>
   </div>
   <section class="container gc-srvinfo">
-    <h2 class="mrgn-tp-0">Find a different sign-in service</h2>
+    <h2 class="mrgn-tp-0">Find a different government sign-in service</h2>
     <div class="row wb-eqht-grd">
       <div class="col-sm-6">
-        <h3 class="mrgn-tp-0"><a href="#">CRA sign-in services</a></h3>
+        <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html">CRA sign-in services</a></h3>
         <p>There are other CRA accounts to complete different tasks, such as representing a client or managing your business accounts.</p>
       </div>
       <div class="col-sm-6">
-        <h3 class="mrgn-tp-0"><a href="https://www.canada.ca/en/government/sign-in-online-account.html">Government of Canada online accounts</a></h3>
-        <p>There may be government sign-in accounts that provide access to different government services.</p>
+        <h3 class="mrgn-tp-0"><a href="https://www.canada.ca/en/government/sign-in-online-account.html">Government of Canada sign-in services</a></h3>
+        <p>There may government sign-in accounts that provide access to different government services.</p>
       </div>
     </div>
   </section>
@@ -437,9 +469,32 @@
       <h2 class="modal-title">List of Sign-in Partner banks and credit unions</h2>
     </header>
     <div class="modal-body">
-      <div data-ajax-replace="https://www.canada.ca/content/dam/cra-arc/includes/chooser-page-logos.txt#logos-en">
+      <ul class="colcount-xs-2">
+        <li>Affinity Credit Union</li>
+        <li>ATB Financial</li>
+        <li>BMO Financial Group</li>
+        <li>CIBC</li>
+        <li>Coast Capital</li>
+        <li>Conexus</li>
+        <li>connectFirst</li>
+        <li>Desjardins</li>
+        <li>Libro</li>
+        <li>Meridian</li>
+        <li>National Bank</li>
+        <li>RBC Royal Bank</li>
+        <li>Scotiabank</li>
+        <li>Servus Credit Union</li>
+        <li>Simplii Financial</li>
+        <li>Tangerine</li>
+        <li>TD Canada Trust</li>
+        <li>Uni</li>
+        <li>Vancity</li>
+        <li>Wealthsimple</li>
+      </ul>
+      
+      <!--div data-ajax-replace="https://www.canada.ca/content/dam/cra-arc/includes/chooser-page-logos.txt#logos-en">
         <p><a href="https://www.canada.ca/content/dam/cra-arc/includes/chooser-page-logos.txt#logos-en">List of Sign-in Partner banks and credit unions</a></p>
-      </div>
+      </div--> 
     </div>
   </section>
   <section id="sign-in-partner-privacy" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -449,7 +504,7 @@
     <div class="modal-body">
       <ul class="list-unstyled cnjnctn-type-and brdr-0">
         <li class="cnjnctn-col">
-          <p class="mrgn-bttm-md">The banking credentials you enter and the identity of the financial institution are not shared with the Government of Canada.</p>
+          <p class="mrgn-bttm-md">Your banking information and the identity of your financial institution are not shared with the Government of Canada.</p>
         </li>
         <li class="cnjnctn-col">
           <p>None of your personal tax information will be shared with your financial institution.</p>
@@ -462,18 +517,18 @@
       <h2 class="modal-title">Choose memorable security questions</h2>
     </header>
     <div class="modal-body">
-      <p>You will be asked to choosse 5 security questions and answers that will be used to recover your account if you forget your password.</p>
-      <p>You may want to choose questions that have more factual answers, instead of questions that can change over time or can have more than one answer.</p>
-      <p>For example, it may be easier to remember the make of your first car, instead of your favourite food or the name of a childhood friend that you may sometimes write as a nickname or with their last name.</p>
+      <p>You will be asked to choose 5 security questions that will be used to recover your account if you forget your password.</p>
+      <p>It is a good idea to choose questions that have factual answers. Answers that can change over time or have more than one answer can be hard to remember.</p>
+      <p>For example, it may be easier to remember the make of your first car. It may be harder to remember the name of a childhood friend that you might sometimes write in full or sometimes as a nickname.</p>
     </div>
   </section>
   <section id="shared-device" class="mfp-hide modal-dialog modal-content overlay-def">
     <header class="modal-header">
-      <h2 class="modal-title">Shared devices: do not use auto-complete for banking credentials</h2>
+      <h2 class="modal-title">Shared devices: Do not use auto-complete for banking credentials</h2>
     </header>
     <div class="modal-body">
-      <p>Make sure you do <strong>not</strong> use your browser's auto-complete for your online banking credentials if you register on a device you share with other people.</p>
-      <p>If you sign in with someone else's banking credentials by mistake and link your SIN number to their account, the other person will have access to your CRA My Account.</p>
+      <p>Do <strong>not</strong> use your browser's auto-complete for your online banking credentials if you register on a shared device.</p>
+      <p>If you sign in with someone else's banking credentials by mistake and link your SIN to them, the other person will have access to your CRA account.</p>
     </div>
   </section>
   <section id="accepted-id" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -481,7 +536,7 @@
       <h2 class="modal-title">Accepted identification documents</h2>
     </header>
     <div class="modal-body">
-      <p>The following original government-issued documents are accepted:</p>
+      <p>We accept the following original government-issued documents:</p>
       <ul class="fa-ul">
         <li><span class="fas fa-check text-success fa-li"></span>Your Canadian passport</li>
         <li><span class="fas fa-check text-success fa-li"></span>Your Canadian driver's license</li>
@@ -504,8 +559,8 @@
       <!--Option if they will always be asked for numbers from most recent tax return-->
       <p>You will be asked to enter the amount you reported on:</p>
       <ul>
-        <li>line 15000</li>
-        <li>another variable line number</li>
+        <li>Line 15000</li>
+        <li>Another variable line number</li>
       </ul>
       <p>Use the numbers that you reported on the most recent tax return that you filed. Your tax return must be assessed and from either the current or previous tax year.</p>
       <p>Use only the numbers that you <strong>reported</strong> on your return, even if your return was reassessed and the numbers have changed.</p>
@@ -525,16 +580,16 @@
     <div class="modal-body">
       <p>When you sign in, you can choose to receive your one-time passcode by:</p>
       <ul>
-        <li>text message</li>
-        <li>phone call from a toll-free number</li>
+        <li>Text message</li>
+        <li>Phone call from a toll-free number</li>
       </ul>
       <p>If you did not receive your one-time passcode, you can:</p>
       <ul>
-        <li>ask for it to be resent or sent to a different telephone number that is already connected to your account</li>
-        <li>use the passcode grid if you are already enrolled with that option</li>
+        <li>Ask for it to be resent or sent to a different telephone number that is already connected to your account</li>
+        <li>Use the passcode grid if you are already enrolled with that option</li>
       </ul>
-      <p>If you can't receive your one-time passcode, please <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html">contact us</a>.</p>
-      <p class="mrgn-tp-md"><a href="">More help with multi-factor authentication</a></p>
+      <p>If you can't receive your one-time passcode, please <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#prs-01">contact us by phone</a>.</p>
+      <p class="mrgn-tp-md"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html">More help with multi-factor authentication</a></p>
     </div>
   </section>
   <section id="mfa-grid" class="mfp-hide modal-dialog modal-content overlay-def">
@@ -544,8 +599,8 @@
     <div class="modal-body">
       <p>The passcode grid is a table made up of numbered rows and lettered columns, similar to a Bingo card.</p>
       <p>We will ask for a specific combination of rows and columns to create your one-time passcode.</p>
-      <p>If you lose your passcode grid, you will still be able to sign in if you have added the telephone option for MFA. If you have not, you will need to <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html">contact us</a>.</p>
-      <p><a href="">More help with multi-factor authentication</a></p>
+      <p>If you lose your passcode grid, you will still be able to sign in if you have added the telephone option for MFA. If you have not, you will need to <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#prs-01">contact us by phone</a>.</p>
+      <p class="mrgn-tp-md"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html">More help with multi-factor authentication</a></p>
     </div>
   </section>
   <section id="expired-code" class="mfp-hide modal-dialog modal-content overlay-def">
