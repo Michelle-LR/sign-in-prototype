@@ -1,6 +1,6 @@
 # sign-in-prototype
 
-| Page       | Status (U/D/M)    | Baseline   |
+| Page       | Status (U/D/M/A)    | Baseline   |
 | ---------- | ----------------- | -----------|
 | [account-individuals](https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html) | Updated | [account-individuals](https://cra-proto.github.io/sign-in-baseline/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html) |
 | [account-individuals/register](https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/register.html) | Moved | [registration-process-access-cra-login-services](https://cra-proto.github.io/sign-in-baseline/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs/registration-process-access-cra-login-services.html) |
@@ -10,3 +10,4 @@
 | [represent-a-client/register](https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client/register.html) | Moved | [registration-process-access-cra-login-services](https://cra-proto.github.io/sign-in-baseline/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs/registration-process-access-cra-login-services.html) |
 | [cra-login-services](https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html) | Updated | [cra-login-services](https://cra-proto.github.io/sign-in-baseline/en/revenue-agency/services/e-services/cra-login-services.html) |
 | [multi-factor-authentication-access-cra-login-services](https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html) | Updated | [multi-factor-authentication-access-cra-login-services](https://cra-proto.github.io/sign-in-baseline/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html) |
+| [about-login](https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-login.html) | Added | N/A |
