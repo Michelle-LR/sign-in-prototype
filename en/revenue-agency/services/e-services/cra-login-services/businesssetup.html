@@ -245,7 +245,7 @@
 <li><a href='/sign-in-prototype/en/services/taxes.html'>Taxes</a></li>
 <li><a href='/sign-in-prototype/en/revenue-agency/services/e-services.html'>Digital services</a></li>
 <li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html'>CRA sign-in services</a></li>
-			<li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html'>[HELP TOPIC PAGE]</a></li>
+			<li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html'>"Help guides for CRA sign-in accounts"</a></li>
 
 </ol></div></nav>
 
@@ -289,8 +289,10 @@
 <div class="mwsbodytext text parbase section">
     <h3>On this page</h3>
     <ul>
-      <li><a href="#section1">Business set-up</a></li>
-      <li><a href="#section2">Group set-up</a></li>
+      <li><a href="#section1">Business set-up</a>
+	    <ul><li><a href="#section2">Manage employee access</a></li></ul></li>
+      <li><a href="#section3">Group set-up</a>
+	      <ul><li><a href="#section4">Manage representative access</a></li></ul></li>
     </ul>
 <h2 id="section1">Business set-up</h2>
     <p>Follow these steps to set up your business to use Represent a Client (RAC):</p>
@@ -310,32 +312,37 @@
 </li>
     
   </ol>
-	<h3>Manage employee access</h3>
+	<h3 id="section2">Manage employee access</h3>
 	<p>You can assign various roles to your employees to manage their access and responsibilities. Refer to the table below to understand the functions available to each role.</p>
 <!--<p>You can use one or more junior or senior administrators to associate and manage employees. You can also manage your employees’ access using the junior and senior representative functions. Refer to the table below to understand the functions available to each role.</p>-->
 </div>
 
 <div class="row">
     <div class="col-md-2">
-        <h3 class="wb-inv">Select representative level</h3>
+        <h3 class="wb-inv">Select role</h3>
     <div data-wb-actionmng='[
 		{ "trggroup":"resetBtns", "action": "removeClass", "source": ".btn-default", "class": "btn-primary"},
 		{ "trggroup":"resetBtns", "action": "removeClass", "source": ".grouped", "class": "hidden" },
                             { "trggroup":"resetBtns", "action": "removeClass", "source": ".grouped>strong", "class": "hidden-md, hidden-lg" },
         { "trggroup":"resetBtns", "action": "addClass", "source": ".fltrNt", "class": "hidden" }]' class="mrgn-bttm-md">
          <button type="button" class="btn btn-default btn-primary btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
-			{ "action": "addClass", "class": "btn-primary" }]' id="filterReset" aria-controls="All representatives">All</button>
+			{ "action": "addClass", "class": "btn-primary" }]' id="filterReset" aria-controls="All employees">All</button>
         
       <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
 			{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-lr-toggle", "class": "hidden" }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-1-toggle>strong", "class": "hidden-md, hidden-lg" },
-			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Level 1 view all">Level 1 authority</button>
+			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Junior representative view all">Junior representative</button>
       <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
 			{ "action": "removeClass", "source": ".lvl-2-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-2-toggle>strong", "class": "hidden-md, hidden-lg" }, { "action": "addClass", "source": ".lvl-1-toggle, .lvl-lr-toggle", "class": "hidden" },
-			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Level 2 view all">Level 2 authority</button>
+			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Senior representative view all">Senior representative</button>
       <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
 			{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-2-toggle", "class": "hidden" },
-			{ "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-lr-toggle>strong", "class": "hidden-md, hidden-lg" },{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Legal Representative view all">Legal representative</button>
-        
+			{ "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-lr-toggle>strong", "class": "hidden-md, hidden-lg" },{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Junior administrator view all">Junior administrator</button>
+         <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
+		 { "action": "addClass", "source": ".lvl-2-toggle, .lvl-lr-toggle, .lvl-1-toggle, .lvl-o-toggle", "class": "hidden" }, { "action": "removeClass", "source": ".lvl-sa-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-sa-toggle>strong", "class": "hidden-md, hidden-lg" },
+			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Senior administrator view all">Senior administrator</button>
+	     <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
+		 { "action": "addClass", "source": ".lvl-2-toggle, .lvl-lr-toggle, .lvl-1-toggle, .lvl-sa-toggle", "class": "hidden" }, { "action": "removeClass", "source": ".lvl-o-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-o-toggle>strong", "class": "hidden-md, hidden-lg" },
+			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Owner view all">Owner</button>
     </div>
  
      
@@ -345,9 +352,12 @@
 <div class="col-md-10">    
      <!--<div aria-live="polite">
           <p><span class="lvl-reset fltrNt wb-inv hidden">Filters are reset</span>
-          <span class="fltrNt hidden" id="lvl-1-note">You are viewing the <strong>Level 1</strong> type authority filtered table.</span>
-           <span class="fltrNt hidden" id="lvl-2-note">You are viewing the <strong>Level 2</strong> type authority filtered table.</span>
-          <span class="fltrNt hidden" id="lvl-lr-note">You are viewing the <strong>Legal representative</strong> type authority filtered table.</span>
+          <span class="fltrNt hidden" id="lvl-1-note">You are viewing the <strong>Junior representative</strong> role filtered table.</span>
+           <span class="fltrNt hidden" id="lvl-2-note">You are viewing the <strong>Senior representative</strong> role filtered table.</span>
+          <span class="fltrNt hidden" id="lvl-lr-note">You are viewing the <strong>Junior administrator</strong> role filtered table.</span>
+	          <span class="fltrNt hidden" id="lvl-sa-note">You are viewing the <strong>Senior administrator</strong> role filtered table.</span>
+	          <span class="fltrNt hidden" id="lvl-o-note">You are viewing the <strong>Owner</strong> role filtered table.</span>
+
            </p></div>//-->
     
 <section id="filteredFAQ" class="wb-tagfilter provisional wb-filter" data-wb-filter='{
@@ -358,7 +368,7 @@
 
 	<form id="searchFilter" class="row">
 		<div class="col-sm-12">
-			<p class="h3 wb-fltr-info mrgn-tp-0"><span data-nbitem></span> results out of <span data-total></span><span class="fltrNt hidden lvl-1-note">, filtered by Level 1 authority</span><span class="fltrNt hidden lvl-2-note">, filtered by Level 2 authority</span><span class="fltrNt hidden lvl-lr-note">, filtered by Legal representative</span></p>
+			<p class="h3 wb-fltr-info mrgn-tp-0"><span data-nbitem></span> results out of <span data-total></span><span class="fltrNt hidden lvl-1-note">, filtered by Junior representative role</span><span class="fltrNt hidden lvl-2-note">, filtered by Senior representative role</span><span class="fltrNt hidden lvl-lr-note">, filtered by Junior administrator</span><span class="fltrNt hidden lvl-sa-note">, filtered by Senior administrator</span><span class="fltrNt hidden lvl-o-note">, filtered by Owner role</span></p>
 		</div>
 		<div class="col-sm-4 col-md-5 col-lg-4">
            
@@ -378,58 +388,74 @@
     <thead>
       <tr>
         <th scope="col">Feature</th>
-          <th scope="col" class="nowrap col-sm-6">Actions<span class="fltrNt lvl-1-note hidden-xs hidden-sm hidden"> that can be done by level 1 authority</span><span class="fltrNt lvl-2-note hidden-xs hidden-sm hidden"> that can be done by level 2 authority</span><span class="fltrNt lvl-lr-note hidden-xs hidden-sm hidden"> that can be done by a legal representative</span></th>
+          <th scope="col" class="nowrap col-sm-6">Actions<span class="fltrNt lvl-1-note hidden-xs hidden-sm hidden"> that can be done by Junior representatives</span><span class="fltrNt lvl-2-note hidden-xs hidden-sm hidden"> that can be done by Senior representatives</span><span class="fltrNt lvl-lr-note hidden-xs hidden-sm hidden"> that can be done by Junior administrators</span><span class="fltrNt lvl-sa-note hidden-xs hidden-sm hidden"> that can be done by Senior administrators</span><span class="fltrNt lvl-o-note hidden-xs hidden-sm hidden"> that can be done by Owners</span></th>
       </tr>
     </thead>
     <tbody>
       <tr class="fltrTr">
-        <td><p class="text-left">Address or telephone numbers</p></td>
+        <td><p class="text-left">Associate representatives</p></td>
         <td><ul class="list-unstyled text-left lst-spcd">
-          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
-          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
-          <li class="lvl-lr-toggle grouped">
-              <strong>Legal rep: </strong>View, Update</li>
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+          <li class="lvl-lr-toggle grouped"><strong>Junior admin: </strong>Allowed</li>
+		          <li class="lvl-sa-toggle grouped"><strong>Senior admin: </strong>Allowed</li>
+          <li class="lvl-o-toggle grouped"><strong>Owner: </strong>Allowed</li>
+
              </td>
       </tr>
         <tr class="fltrTr">
-        <td><p class="text-left">Audit enquiries</p></td>
+        <td><p class="text-left">Associate senior and junior administrators</p></td>
         <td><ul class="list-unstyled text-left lst-spcd">
-          <li class="lvl-1-toggle grouped"  data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
-          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>View, Make an enquiry</li>
-          <li class="lvl-lr-toggle grouped">
-              <strong>Legal rep: </strong>View, Make an enquiry</li></td>
+          <li class="lvl-1-toggle grouped"  data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+          <li class="lvl-lr-toggle grouped"><strong>Junior admin: </strong>No access</li></td>
+		          <li class="lvl-sa-toggle grouped"><strong>Senior admin: </strong>Allowed</li></td>
+		          <li class="lvl-o-toggle grouped"><strong>Owner: </strong>Allowed</li></td>
+
       </tr>
         <tr class="fltrTr">
-        <td><p class="text-left">Representative authorization</p></td>
+        <td><p class="text-left">Assign employee privileges</p></td>
         <td><ul class="list-unstyled text-left lst-spcd">
-          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
-          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
           <li class="lvl-lr-toggle grouped">
-              <strong>Legal rep: </strong>View, Authorize</li></td>
+              <strong>Junior admin: </strong>No access</li></td>
+		<li class="lvl-sa-toggle grouped">
+              <strong>Senior admin: </strong>Allowed</li></td>
+	 <li class="lvl-o-toggle grouped">
+              <strong>Owner: </strong>Allowed</li></td>
       </tr>
         <tr class="fltrTr">
-        <td><p class="text-left">Direct deposit</p></td>
+        <td><p class="text-left">View list of employees</p></td>
         <td><ul class="list-unstyled text-left lst-spcd">
-          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
-          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
           <li class="lvl-lr-toggle grouped">
-              <strong>Legal rep: </strong>View, Update, Start, Stop</li>
+              <strong>Junior admin: </strong>Allowed</li>
+		<li class="lvl-sa-toggle grouped">
+              <strong>Senior admin: </strong>Allowed</li>
+		<li class="lvl-o-toggle grouped">
+              <strong>Owner: </strong>Allowed</li>
             </td>
       </tr>
         <tr class="fltrTr">
         <td><div class="text-left">
-            <p>Benefits and credits, including:</p>
-            <ul>
+            <p>Disassociate an employee<br>Re-associate an employee<br>Modify employee associations<br>Delete employee association</p>
+         <!--   <ul>
               <li>Canada Child Benefit</li>
               <li>Universal Child Care Benefit</li>
               <li>Canada Workers Benefit</li>
-            </ul>
+            </ul>-->
           </div></td>
         <td><ul class="list-unstyled text-left lst-spcd">
-          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>View only</li>
-          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>View only</li>
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
           <li class="lvl-lr-toggle grouped">
-              <strong>Legal rep: </strong>View, Apply</li>
+              <strong>Junior admin: </strong>Allowed</li>
+		<li class="lvl-sa-toggle grouped">
+              <strong>Senior admin: </strong>Allowed</li>
+		<li class="lvl-o-toggle grouped">
+              <strong>Owner: </strong>Allowed</li>
             </td>
       </tr>
     </tbody>
