@@ -278,8 +278,10 @@
             
             <div class="mwstitle section">
 
-    <h1 property="name" id="wb-cont" dir="ltr">
-Set up a business or group in Represent a Client</h1>
+   <div class="mwstitle section">
+<p class="lead mrgn-tp-md mrgn-bttm-0 text-muted">CRA account help</p>
+<h1 class="mrgn-tp-0 gc-thickline" id="wb-cont">Set up a business or group in Represent a Client</h1>
+</div>
 <p>Learn how to set up your business or group and to associate employees or representatives to it.</p>
 
 
@@ -303,13 +305,141 @@ Set up a business or group in Represent a Client</h1>
       <li>Select <strong>Manage employees' access</strong></li>
       <li>Select <strong>Associate employees</strong></li>
       <li>Select a role for the employee and enter their RepID</li>
-      <li>You can also assign privileges to individual employees regardless of their role</li>
+  <!--    <li>You can also assign privileges to individual employees regardless of their role</li>-->
       </ol>
 </li>
     
   </ol>
-<p>You can use one or more junior or senior administrators to associate and manage employees. You can also manage your employees’ access using the junior and senior representative functions. Refer to the table below to understand the functions available to each role.</p>
+	<h3>Manage employee access</h3>
+	<p>You can assign various roles to your employees to manage their access and responsibilities. Refer to the table below to understand the functions available to each role.</p>
+<!--<p>You can use one or more junior or senior administrators to associate and manage employees. You can also manage your employees’ access using the junior and senior representative functions. Refer to the table below to understand the functions available to each role.</p>-->
 </div>
+
+<div class="row">
+    <div class="col-md-2">
+        <h3 class="wb-inv">Select representative level</h3>
+    <div data-wb-actionmng='[
+		{ "trggroup":"resetBtns", "action": "removeClass", "source": ".btn-default", "class": "btn-primary"},
+		{ "trggroup":"resetBtns", "action": "removeClass", "source": ".grouped", "class": "hidden" },
+                            { "trggroup":"resetBtns", "action": "removeClass", "source": ".grouped>strong", "class": "hidden-md, hidden-lg" },
+        { "trggroup":"resetBtns", "action": "addClass", "source": ".fltrNt", "class": "hidden" }]' class="mrgn-bttm-md">
+         <button type="button" class="btn btn-default btn-primary btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
+			{ "action": "addClass", "class": "btn-primary" }]' id="filterReset" aria-controls="All representatives">All</button>
+        
+      <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
+			{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-lr-toggle", "class": "hidden" }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-1-toggle>strong", "class": "hidden-md, hidden-lg" },
+			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Level 1 view all">Level 1 authority</button>
+      <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
+			{ "action": "removeClass", "source": ".lvl-2-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-2-toggle>strong", "class": "hidden-md, hidden-lg" }, { "action": "addClass", "source": ".lvl-1-toggle, .lvl-lr-toggle", "class": "hidden" },
+			{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Level 2 view all">Level 2 authority</button>
+      <button type="button" class="btn btn-default btn-block" data-wb-doaction='[{ "action": "run", "trggroup": "resetBtns" },
+			{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-2-toggle", "class": "hidden" },
+			{ "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden" }, { "action": "addClass", "source": ".lvl-lr-toggle>strong", "class": "hidden-md, hidden-lg" },{ "action": "addClass", "class": "btn-primary" }]' aria-controls="Legal Representative view all">Legal representative</button>
+        
+    </div>
+ 
+     
+
+  </div>
+
+<div class="col-md-10">    
+     <!--<div aria-live="polite">
+          <p><span class="lvl-reset fltrNt wb-inv hidden">Filters are reset</span>
+          <span class="fltrNt hidden" id="lvl-1-note">You are viewing the <strong>Level 1</strong> type authority filtered table.</span>
+           <span class="fltrNt hidden" id="lvl-2-note">You are viewing the <strong>Level 2</strong> type authority filtered table.</span>
+          <span class="fltrNt hidden" id="lvl-lr-note">You are viewing the <strong>Legal representative</strong> type authority filtered table.</span>
+           </p></div>//-->
+    
+<section id="filteredFAQ" class="wb-tagfilter provisional wb-filter" data-wb-filter='{
+		"selector": ".fltrTr",
+		"section": "#tbl1",
+		"uiTemplate": "#searchFilter"
+	}'>
+
+	<form id="searchFilter" class="row">
+		<div class="col-sm-12">
+			<p class="h3 wb-fltr-info mrgn-tp-0"><span data-nbitem></span> results out of <span data-total></span><span class="fltrNt hidden lvl-1-note">, filtered by Level 1 authority</span><span class="fltrNt hidden lvl-2-note">, filtered by Level 2 authority</span><span class="fltrNt hidden lvl-lr-note">, filtered by Legal representative</span></p>
+		</div>
+		<div class="col-sm-4 col-md-5 col-lg-4">
+           
+			<div class="form-group">
+				<label for="customSearchUI">Search</label>
+				<input type="search" class="form-control full-width" id="customSearchUI">
+                
+            
+			</div>
+		</div>
+    </form>
+    <h3 class="wb-inv">Features</h3>
+ <table class="provisional gc-table table table-bordered table-striped" id="tbl1">
+    <caption class="wb-inv">
+    Table of features
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Feature</th>
+          <th scope="col" class="nowrap col-sm-6">Actions<span class="fltrNt lvl-1-note hidden-xs hidden-sm hidden"> that can be done by level 1 authority</span><span class="fltrNt lvl-2-note hidden-xs hidden-sm hidden"> that can be done by level 2 authority</span><span class="fltrNt lvl-lr-note hidden-xs hidden-sm hidden"> that can be done by a legal representative</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="fltrTr">
+        <td><p class="text-left">Address or telephone numbers</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+          <li class="lvl-lr-toggle grouped">
+              <strong>Legal rep: </strong>View, Update</li>
+             </td>
+      </tr>
+        <tr class="fltrTr">
+        <td><p class="text-left">Audit enquiries</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+          <li class="lvl-1-toggle grouped"  data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>View, Make an enquiry</li>
+          <li class="lvl-lr-toggle grouped">
+              <strong>Legal rep: </strong>View, Make an enquiry</li></td>
+      </tr>
+        <tr class="fltrTr">
+        <td><p class="text-left">Representative authorization</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+          <li class="lvl-lr-toggle grouped">
+              <strong>Legal rep: </strong>View, Authorize</li></td>
+      </tr>
+        <tr class="fltrTr">
+        <td><p class="text-left">Direct deposit</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+          <li class="lvl-lr-toggle grouped">
+              <strong>Legal rep: </strong>View, Update, Start, Stop</li>
+            </td>
+      </tr>
+        <tr class="fltrTr">
+        <td><div class="text-left">
+            <p>Benefits and credits, including:</p>
+            <ul>
+              <li>Canada Child Benefit</li>
+              <li>Universal Child Care Benefit</li>
+              <li>Canada Workers Benefit</li>
+            </ul>
+          </div></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>View only</li>
+          <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>View only</li>
+          <li class="lvl-lr-toggle grouped">
+              <strong>Legal rep: </strong>View, Apply</li>
+            </td>
+      </tr>
+    </tbody>
+  </table>
+        </section>
+    </div>
+    </div>
+    
+    
+		
 <div class="table-responsive section">
 
         
