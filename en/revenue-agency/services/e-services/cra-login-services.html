@@ -201,13 +201,19 @@
       <div class="row">
         <div class="col-sm-6">
           <details>
-            <summary>Lost password or User ID</summary>
+            <summary>Forgotten password or CRA User ID</summary>
             <!--This is the same for MyA, MyBA, and RAC but not Candidiate profile-->
-            <h4 class="h5">Lost password</h4>
-            <p>If you have lost your CRA password, select <strong>CRA user ID</strong> and then select <strong>Forgot your password?</strong></p>
+            <h4 class="h5">Forgotten password</h4>
+            <p>If you have forgotten your CRA password:</p>
+		  <ol class="">
+		  <li>Select <strong>CRA user ID</strong></li> 
+			  <li>Then select <strong>Forgot your password?</strong></li></ol>
             <p>You can create a new password if you correctly answer the security questions you chose when you registered.</p>
-            <h4 class="h5">Forgotten User ID</h4>
-            <p>To recover your CRA user ID, select <strong>CRA user ID</strong> and then select <strong>Forgot your user ID?</strong></p>
+            <h4 class="h5">Forgotten CRA User ID</h4>
+            <p>To recover your CRA user ID:
+		    <ol class="">
+		    <li>Select <strong>CRA user ID</strong></li>
+			    <li>Then select <strong>Forgot your user ID?</strong></li></ol>
             <p>You will need the following: </p>
             <ul>
               <li>Your SIN</li>
@@ -219,23 +225,26 @@
           <details>
             <summary>Did not receive one-time passcode</summary>
             <!--h4 class="h5">One-time passcode by phone</h4-->
-            <p class="mrgn-tp-md">Multi-factor authentication (MFA) increases the security of your account by requiring you to enter a one-time passcode in addition to your password. </p>
+            <p class="mrgn-tp-md">Multi-factor authentication (MFA) increases the security of your account by requiring you to enter a one-time passcode each time you sign in. </p>
             <h3 class="h5">One-time passcode by phone</h3>
             <p>If you cannot receive your one-time passcode by phone, you can:</p>
             <ul>
               <li>Ask for it to be resent or sent to a different telephone number that is already connected to your account</li>
-              <li>Use the passcode grid if you are already enrolled with that option</li>
+              <li>Select <strong>different option</strong> to use the passcode grid or authenticator app if you are already enrolled with either of those options</li>
+		    <li>Confirm that you are signing into your account, make sure auto fill is turned off or direct sign-in is disabled (e.g. through your financial institution)</li>
             </ul>
             <h3 class="h5">One-time passcode by passcode grid</h3>
-            <p>If you lose your passcode grid or it expires, you will still be able to sign in if you have also added the telephone option for MFA.</p>
-            <p></p>
+            <p>If you lose your passcode grid or it expires, you will still be able to sign in if you have also added the phone or authenticator app option for MFA.</p>
+		  <h3 class="h5">Time-based one-time passcode by authenticator app</h3>
+            <p>If you can't access your authenticator app, you will still be able to sign in if you have also added the phone or passcode grid option for MFA.</p>
             <h3 class="h5">When to contact us</h3>
             <p>If you still cannot receive your one-time passcode, please <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a>.</p>
             <p class="mrgn-tp-md"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html">More help with multi-factor authentication</a></p>
           </details>
           <details>
             <summary>Expired security code</summary>
-            <p class="mrgn-tp-md">If your CRA security code expires or has not arrived after waiting 14 days, you can <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a> to get a new one.</p>
+            <p class="mrgn-tp-md">If your CRA security code expires, has been lost, or has not arrived after waiting 10 business days, you may be able to use <i>Interac</i> document verification service to validate your identity.</p>
+		   <p>If you prefer to receive another CRA security code by mail, you can <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a> to get a new one.</p>
           </details>
         </div>
         <div class="col-sm-6">
@@ -244,21 +253,22 @@
             <p class="mrgn-tp-md">Your account will become locked if you enter the wrong information too many times for any of the following:</p>
             <ul>
               <li>Password</li>
-              <li>One-time passcode</li>
+              <li>One-time passcode for multi-factor authentication (MFA)</li>
               <li>Security questions</li>
               <li>CRA security code</li>
             </ul>
             <p>If your account becomes locked, <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a> to have your account unlocked.</p>
           </details>
           <details>
-            <summary>Revoked user ID and password</summary>
-            <p class="mrgn-tp-md">Your user ID and password may be revoked if there is suspicious activity connected with your account.</p>
-			  <p>If this happens, you can:</p>
+            <summary>Revoked CRA user ID and password</summary>
+            <p class="mrgn-tp-md">If your CRA user ID and password have been revoked, you can regain access to your account in the following ways:</p>
+			  
             <ul>
               <li>Sign in with another method if you are already registered</li>
-              <li><a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/register.html">Register for a new CRA user ID</a></li>
+             <!-- <li><a href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/register.html">Register for a new CRA user ID</a></li>-->
+		    <l><a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">Contact us</a> to register for a new CRA user ID and password</l>
             </ul>
-            <p><a href="">More help with revoked CRA user ID and password</a></p>
+            <p><a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section6">More help with revoked CRA user ID and password</a></p>
           </details>
           <details>
             <summary>Last issue</summary>
@@ -268,14 +278,14 @@
       </div>
 	    
 	   <h3 class="wb-inv">Help and about sign-in</h3> 
-      <div class="row">
+      <div class="row gc-srvinfo mrgn-tp-lg">
         <div class="col-md-6">
           <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html">Help guides for sign-in accounts</a></h3>
-          <p>Understand and complete certan tasks in the CRA sign-in accounts, glossary of terms</p>
+          <p>Find help for registering, accessing, updating and managing your CRA sign-in account</p>
         </div>
         <div class="col-md-6">
           <h3 class="mrgn-tp-0"><a href="cra-login-services/about-login.html">About CRA sign-in accounts</a></h3>
-          <p>Online hours of availability,  privacy commitments, and browser requirements</p>
+          <p>Online hours of availability, privacy commitments, and browser requirements</p>
         </div>
         
        
