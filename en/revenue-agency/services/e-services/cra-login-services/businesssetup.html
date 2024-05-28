@@ -245,7 +245,7 @@
 <li><a href='/sign-in-prototype/en/services/taxes.html'>Taxes</a></li>
 <li><a href='/sign-in-prototype/en/revenue-agency/services/e-services.html'>Digital services</a></li>
 <li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html'>CRA sign-in services</a></li>
-			<li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html'>"Help guides for CRA sign-in accounts"</a></li>
+			<li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html'>Help guides for CRA sign-in accounts</a></li>
 
 </ol></div></nav>
 
@@ -394,7 +394,7 @@
 
 	<form id="searchFilter" class="row">
 		<div class="col-sm-12">
-			<p class="h3 wb-fltr-info mrgn-tp-0"><span data-nbitem></span> results out of <span data-total></span><span class="fltrNt hidden lvl-1-note">, filtered by Junior representative role</span><span class="fltrNt hidden lvl-2-note">, filtered by Senior representative role</span><span class="fltrNt hidden lvl-lr-note">, filtered by Junior administrator</span><span class="fltrNt hidden lvl-sa-note">, filtered by Senior administrator</span><span class="fltrNt hidden lvl-o-note">, filtered by Owner role</span></p>
+			<p class="h3 wb-fltr-info mrgn-tp-0" role="status"><span data-nbitem></span> results out of <span data-total></span><span class="fltrNt hidden lvl-1-note">, filtered by Junior representative role</span><span class="fltrNt hidden lvl-2-note">, filtered by Senior representative role</span><span class="fltrNt hidden lvl-lr-note">, filtered by Junior administrator</span><span class="fltrNt hidden lvl-sa-note">, filtered by Senior administrator</span><span class="fltrNt hidden lvl-o-note">, filtered by Owner role</span></p>
 		</div>
 		<div class="col-sm-4 col-md-5 col-lg-4">
            
@@ -407,7 +407,7 @@
 		</div>
     </form>
     <h3 class="wb-inv">Actions</h3>
- <table class="provisional gc-table table table-bordered table-striped" id="tbl1"> data-wb-tables='{"dom": "", "paging": false, "columnDefs": [{ "orderable": false, "targets": [1] }], "order": [
+<table class="provisional wb-tables gc-table table table-bordered table-striped" id="tbl1"  data-wb-tables='{"dom": "", "paging": false, "columnDefs": [{ "orderable": false, "targets": [1] }], "order": [
         [0, "asc"]]}'>
     <caption class="wb-inv">
     Table of features
@@ -467,7 +467,27 @@
       </tr>
         <tr class="fltrTr">
         <td><div class="text-left">
-            <p>Disassociate an employee<br>Re-associate an employee<br>Modify employee associations<br>Delete employee association</p>
+            <p>Disassociate or re-associate an employee</p>
+         <!--   <ul>
+              <li>Canada Child Benefit</li>
+              <li>Universal Child Care Benefit</li>
+              <li>Canada Workers Benefit</li>
+            </ul>-->
+          </div></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+          <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+          <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+          <li class="lvl-lr-toggle grouped">
+              <strong>Junior admin: </strong>Allowed</li>
+		<li class="lvl-sa-toggle grouped">
+              <strong>Senior admin: </strong>Allowed</li>
+		<li class="lvl-o-toggle grouped">
+              <strong>Owner: </strong>Allowed</li>
+            </td>
+      </tr>
+	    <tr class="fltrTr">
+        <td><div class="text-left">
+            <p>Modify or delete employee associations</p>
          <!--   <ul>
               <li>Canada Child Benefit</li>
               <li>Universal Child Care Benefit</li>
@@ -525,7 +545,7 @@
             </td>
       </tr>
 <tr class="fltrTr">
-        <td><p class="text-left">Suspend your business registration for this service<br>Unsuspend the registration of your business for this service<br>Cancel your business registration for this service</p></td>
+        <td><p class="text-left">Suspend, unsuspend or cancel your business registration for this service</p></td>
         <td><ul class="list-unstyled text-left lst-spcd">
           <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
           <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
