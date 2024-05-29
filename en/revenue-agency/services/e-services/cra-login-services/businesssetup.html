@@ -854,6 +854,16 @@
     <li>Select <strong>Business Name</strong> and then select <strong>Create a group</strong> from the <strong>Business information</strong> tab</li>
       <li>Enter and confirm group information</li></ol>
 
+		<h3>Assign taxpayers to your group</h3>
+       <ol class="">
+	       <li><a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client.html">Sign in to your RAC account</a></li>
+        <li>Select <strong>Review and update</strong></li>
+        <li>Select the group you wish to manage</li>
+      <li>Select <strong>Assign taxpayers</strong> from the <strong>Manage clients</strong> tab</li>
+       <li>Enter taxpayer SINs or business numbers</li></ol>
+  </ol>
+<!--<p>You can use one or more junior or senior administrators to associate and manage employees. </p>-->
+		
 	<h3>Associate representatives to your group</h3>    
     <!--  <li>Have your representatives register for a RepID through the <strong>Register yourself</strong> link on the Represent a Client welcome page</li>-->
       <p>Follow these steps to associate representatives to your group</p>
@@ -867,26 +877,253 @@
       <br>You can also assign the privilege of managing access mail to individual representatives regardless of their role</li>
       </ol>
 
-    <h3>Assign taxpayers to your group</h3>
-       <ol class="">
-	       <li><a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client.html">Sign in to your RAC account</a></li>
-        <li>Select <strong>Review and update</strong></li>
-        <li>Select the group you wish to manage</li>
-      <li>Select <strong>Assign taxpayers</strong> from the <strong>Manage clients</strong> tab</li>
-       <li>Enter taxpayer SINs or business numbers</li></ol>
-  </ol>
-<!--<p>You can use one or more junior or senior administrators to associate and manage employees. </p>-->
+    
 
         </div>
 
  <h3 id="section4">Manage representative access</h3>
 		<p>You can assign various roles to your representatives to manage their access and responsibilities. Refer to the table below to understand the functions available to each role.</p>
-        <div class="table-responsive section">
-
-        
-        
-        
-        <table class="table table-condensed table-bordered table-responsive"> 
+     
+<div id="tbl1-filter" class="wb-frmvld hidden">
+<form class="row">
+  <div class="col-sm-4">
+    <div class="wb-fieldflow" data-wb-fieldflow='{ "noForm": true, "isoptional": true, "unhideelm": "#tbl1-filter", "defaultselectedlabel":"All authorities", "reset": [{"action": "removeClass", "source": ".grouped", "class": "hidden" }, {"action": "removeClass", "source": ".grouped>strong", "class": "hidden-md, hidden-lg" }, {"action": "addClass", "source": ".fltrNt", "class": "hidden" }] }'>
+      <p>Filter by role</p>
+      <ul>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-1-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Junior rep</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-2-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-2-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Senior rep</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-2-toggle, .lvl-3-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-lr-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Group admin</li>
+      </ul>
+    </div>
+  </div>
+</form>
+    </div>
+<section id="filteredFAQ" class="wb-filter" data-wb-filter='{
+		"selector": ".fltrTr",
+		"section": "#tbl1",
+		"uiTemplate": "#searchFilter"
+	}'>
+  <form id="searchFilter" class="row">
+    <div class="col-sm-12"> </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="customSearchUI">Search</label>
+        <input type="search" class="form-control full-width" id="customSearchUI">
+      </div>
+      <p class="h3 wb-fltr-info mrgn-tp-0" role="status"><span data-nbitem></span> results out of <span data-total></span><span class="fltrNt hidden lvl-1-note">, filtered to Junior rep</span><span class="fltrNt hidden lvl-2-note">, filtered to Senior rep</span><span class="fltrNt hidden lvl-lr-note">, filtered to Group admin</span></p>
+    </div>
+  </form>
+  <h3 class="wb-inv">Table of roles and functions</h3>
+  <table class="provisional wb-tables gc-table table table-bordered table-striped" id="tbl1"  data-wb-tables='{"dom": "", "paging": false, "columnDefs": [{ "orderable": false, "targets": [1] }], "order": [
+        [0, "asc"]]}'>
+    <caption class="wb-inv">
+    Table of features
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">Function</th>
+        <th scope="col" class="nowrap col-sm-6">Actions<span class="fltrNt lvl-1-note hidden-xs hidden-sm hidden"> that can be done by<br>
+          Junior rep</span><span class="fltrNt lvl-2-note hidden-xs hidden-sm hidden"> that can be done by<br>
+          Senior rep</span><span class="fltrNt lvl-lr-note hidden-xs hidden-sm hidden"> that can be done by<br>
+          Group admin</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="fltrTr">
+        <td><p class="text-left">Associate representatives and group administrators</p>
+          </td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Group admin: </strong>Allowed</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+        <td><p class="text-left">Assign privileges</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped"  data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Group admin: </strong>Allowed</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+        <td><p class="text-left">View list of employees/group members and their activity</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Group admin: </strong>Allowed</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+        <td><p class="text-left">Modify or delete employee/group member association</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Group admin: </strong>Allowed</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+        <td><p class="text-left">Disassociate or re-associate an employee/group member</p>
+          </td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Group admin: </strong>Allowed</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">View and download list of clients for the GroupID</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Junior rep: </strong>With <strong>View and delete individual clients</strong> privilege</li>
+            <li class="lvl-2-toggle grouped"><strong>Senior rep: </strong>With <strong>View and delete individual clients</strong> privilege</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Group admin: </strong>Allowed</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Disability Tax Credit Certificate (Form T2201)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Complete/Fill out part A</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Non-resident tax account</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Open account</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Open account</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Pre-authorized debit (PAD)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>No access</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Make payment</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Proof of income statement (option "C" print)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Formal dispute</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Register</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Register</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Remittance voucher</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Request</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Request</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Ruling (CPP/EI)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Request</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Request</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Penalties and interest</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Request relief</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Request relief</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Documents</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Submit</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Submit</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Account balance and statement of account</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Available payments</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Payments (within same account)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-1-toggle grouped" data-wb-tags="subject_lvl1"><strong>Level 1: </strong>No access</li>
+            <li class="lvl-2-toggle grouped"><strong>Level 2: </strong>Move, transfer, reallocate</li>
+            <li class="lvl-lr-toggle grouped"> <strong>Legal rep: </strong>Move, transfer, reallocate</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Carryover amounts</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Home Buyer's Plan and Lifelong Learning Plan</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Instalments</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Mail</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Notices of assessment and reassessment</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">RRSP</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+        <td><p class="text-left">Tax information slips<br>
+(T4, T4A, T4A(P), T4A(OAS), T4E, T4RSP, T4RIF, T5007, T3, T5, T5008 and RRSP Contribution Receipt)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+      <tr class="fltrTr">
+          <td><p class="text-left">Tax-Free Savings Account (TFSA)</p></td>
+        <td><ul class="list-unstyled text-left lst-spcd">
+            <li class="lvl-all-toggle grouped"><strong>All authority levels: </strong>View</li>
+          </ul></td>
+      </tr>
+    </tbody>
+  </table>
+</section>	
+		
+		<!--<div class="table-responsive section">
+  <table class="table table-condensed table-bordered table-responsive"> 
  <caption> 
   <span class="wb-inv">GroupID registered in RAC – Group administrator, representative permissions as of October 2014</span> 
  </caption> 
@@ -1014,7 +1251,7 @@
 
 
 
-</div>
+</div>-->
  <div class="mwsbodytext text parbase section">
     
 <h4>Assigning privileges</h4>
