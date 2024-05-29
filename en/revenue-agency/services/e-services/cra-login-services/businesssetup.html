@@ -805,15 +805,18 @@
     <p>You can assign certain privileges to employees that will allow them to perform various tasks. They can be assigned to an employee in any role. Where these privileges are assigned to an employee, they will have the ability to perform all of the permissions grouped under that privilege.</p>
 	
          <details><summary>View and delete business clients privilege</summary> <p>The <strong>View and delete business clients</strong> privilege groups these three permissions:</p>  <ul> 
- <li>View and download list of clients for the business</li> 
- <li>Authorization request</li> 
- <li>Delete Authorization</li> 
+ <li>View business client list</li> 
+  
+ <li>Delete Authorizations</li> 
+		 <li>View business transactions (Jr. admins have this ability by default)</li>
 </ul> </details>  
 		 <details><summary>View and delete individual clients privilege</summary>  <p>The<strong> View and delete individual clients</strong> privilege groups these two permissions:</p>  <ul> 
- <li>View and download list of clients for the business</li> 
- <li>Delete Authorization</li> 
+ <li>View individual client list</li> 
+ <li>Delete Authorizations</li> 
+			 <li>View individual transactions (Jr. admins have this ability by default)</li>
+			 <li>View list of notices issued </li>
 </ul> </details> 
-	<details><summary>Manage access mail privilege</summary><p>View pre-assessment review and processing review letters that have been electronically delivered to the EFILE registrant.</p>
+	<details><summary>Manage access mail privilege</summary><p>View pre-assessment review and processing review letters that have been electronically delivered.</p>
 		
 	</details>
 
@@ -843,7 +846,7 @@
 
 	    </div>    </div> </section>
 </div>-->
-<h2 id="section2">Group set-up</h2>
+<h2 id="section3">Group set-up</h2>
 	<p>Creating groups enables businesses to better manage their access to client information. Any individual client that has authorized a business can be assigned to a group. Only business owners, senior administrators, and employees associated to a group will be permitted to access the information of individual clients assigned to that group.
 <h3>Create a group</h3>
 		 <p>Follow these steps to create a group in Represent a Client (RAC):</p>
@@ -890,9 +893,9 @@
     <div class="wb-fieldflow" data-wb-fieldflow='{ "noForm": true, "isoptional": true, "unhideelm": "#tbl2-filter", "defaultselectedlabel":"All roles", "reset": [{"action": "removeClass", "source": ".grouped", "class": "hidden" }, {"action": "removeClass", "source": ".grouped>strong", "class": "hidden-md, hidden-lg" }, {"action": "addClass", "source": ".fltrNt", "class": "hidden" }] }'>
       <p>Filter by role</p>
       <ul>
-        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-1-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Junior rep</li>
-        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-2-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-2-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Senior rep</li>
-        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-2-toggle, .lvl-3-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-lr-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Group admin</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-1-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Junior representative</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-2-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-2-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Senior representative</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-2-toggle, .lvl-3-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-lr-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Group administrator</li>
       </ul>
     </div>
   </div>
