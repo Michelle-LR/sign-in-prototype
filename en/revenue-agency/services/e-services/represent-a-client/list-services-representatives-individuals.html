@@ -227,9 +227,10 @@
 	
 		<nav id="wb-bc" property="breadcrumb"><h2 class="wb-inv">You are here:</h2><div class="container"><ol class="breadcrumb">
 <li><a href='https://www.canada.ca/en.html'>Canada.ca</a></li>
-<li><a href='/sign-in-prototype/en/services/taxes.html'>Taxes</a></li>
-<li><a href='/sign-in-prototype/en/revenue-agency/services/e-services.html'>Digital services</a></li>
-<li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client.html'>Represent a Client</a></li>
+<li><a href='https://www.canada.ca/en/revenue-agency.html'>Canada Revenue Agency</a></li>
+            <li><a href='/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html'>CRA sign-in accounts</a></li>
+<li><a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client sign-in</a></li>
+			<li><a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client/aboutrac.html">About Represent a Client</a></li>
 </ol></div></nav>
 
 
@@ -262,13 +263,13 @@
             <div class="mwstitle section">
 
     <h1 property="name" id="wb-cont" dir="ltr">
-List of services for representatives of individuals</h1>
+Features available to representatives of individuals</h1>
 
 
 
 </div>
-<p>The list of services that representatives can do online on behalf of an individual varies depending on the level of authorization that the individual has consented to.</p>
-<h2>Representatives</h2>
+<p>The features in Represent a Client (RAC) that are available to representatives on behalf of an individual depend on the level of authorization the individual has consented to:</p>
+<!--<h2>Representatives</h2>
 <p>There are two types of representation for a person, level of authority, and legal representation.</p>
 <h3>Level of authority</h3>
 <p>There are two levels of authorization someone can give a representative on a personal tax account:</p>
@@ -279,17 +280,29 @@ List of services for representatives of individuals</h1>
 <p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/overview.html">Authorizing a representative</a></p>
 <h3>Legal representation</h3>
 <p>To be a legal representative, you must be appointed by a legal document. </p>
-<p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/legal-representative.html">Legal representative</a></p>
-<h2>Table of features to represent a client</h2>
-<p>You can toggle each of the representatives to see all the actions that can be done for each feature.</p>
+<p>Refer to: <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/legal-representative.html">Legal representative</a></p>-->
+
+		<ul>
+			<li><strong>Level 1</strong><br>
+			View information only</li>
+			<li><strong>Level 2</strong><br>
+			View and make certain changes to information</li>
+			
+			<li><strong>Legal representative</strong><br>
+			To be a legal representative, you must be appointed by a legal document</li>
+		</ul>
+<p>Learn more: <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/access.html">Authorize a representative: Level of access you can give</a></p>	
+		
+<h2>Table of features for representatives of individuals</h2>
+<p>You can filter by authorization level and program account to see all the actions that can be done for each feature.</p>
 <div id="tbl1-filter" class="wb-frmvld hidden">
 <form class="row">
   <div class="col-sm-4">
-    <div class="wb-fieldflow" data-wb-fieldflow='{ "noForm": true, "isoptional": true, "unhideelm": "#tbl1-filter", "defaultselectedlabel":"All authorities", "reset": [{"action": "removeClass", "source": ".grouped", "class": "hidden" }, {"action": "removeClass", "source": ".grouped>strong", "class": "hidden-md, hidden-lg" }, {"action": "addClass", "source": ".fltrNt", "class": "hidden" }] }'>
-      <p>Filter by authority level</p>
+    <div class="wb-fieldflow" data-wb-fieldflow='{ "noForm": true, "isoptional": true, "unhideelm": "#tbl1-filter", "defaultselectedlabel":"All authorization levels", "reset": [{"action": "removeClass", "source": ".grouped", "class": "hidden" }, {"action": "removeClass", "source": ".grouped>strong", "class": "hidden-md, hidden-lg" }, {"action": "addClass", "source": ".fltrNt", "class": "hidden" }] }'>
+      <p>Filter by authorization level</p>
       <ul>
-        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-1-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Level 1 authority</li>
-        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-2-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-2-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Level 2 authority</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-2-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-1-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-1-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Level 1 authorization</li>
+        <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-3-toggle, .lvl-lr-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-2-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-2-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Level 2 authorization</li>
         <li data-wb-fieldflow='[{ "action": "addClass", "source": ".lvl-1-toggle, .lvl-2-toggle, .lvl-3-toggle", "class": "hidden", "live": true }, { "action": "removeClass", "source": ".lvl-lr-note", "class": "hidden", "live": true }, { "action": "addClass", "source": ".lvl-lr-toggle>strong, .lvl-all-toggle>strong", "class": "hidden-md, hidden-lg", "live": true }]'>Legal representative</li>
       </ul>
     </div>
@@ -320,9 +333,9 @@ List of services for representatives of individuals</h1>
     <thead>
       <tr>
         <th scope="col">Feature</th>
-        <th scope="col" class="nowrap col-sm-6">Actions<span class="fltrNt lvl-1-note hidden-xs hidden-sm hidden"> that can be done by<br>
-          level 1 authority</span><span class="fltrNt lvl-2-note hidden-xs hidden-sm hidden"> that can be done by<br>
-          level 2 authority</span><span class="fltrNt lvl-lr-note hidden-xs hidden-sm hidden"> that can be done by<br>
+        <th scope="col" class="nowrap col-sm-6">Actions<span class="fltrNt lvl-1-note hidden-xs hidden-sm hidden"> that can be done with<br>
+          level 1 authorization</span><span class="fltrNt lvl-2-note hidden-xs hidden-sm hidden"> that can be done with<br>
+          level 2 authorization</span><span class="fltrNt lvl-lr-note hidden-xs hidden-sm hidden"> that can be done by<br>
           a legal representative</span></th>
       </tr>
     </thead>
