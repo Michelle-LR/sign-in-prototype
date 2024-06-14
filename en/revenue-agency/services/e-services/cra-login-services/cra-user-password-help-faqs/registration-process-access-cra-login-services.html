@@ -229,9 +229,9 @@
             <ul class="mrgn-bttm-md">
               <li>Your Canadian passport</li>
               <li>Your Canadian driver's license</li>
-              <li>Your provincial photo ID card</li>
+              <li>Your provincial or territorial photo ID card</li>
             </ul>
-            <p class="mya hidden">When you register with a provincial digital ID, you <strong>only</strong> need your Social Insurance Number (SIN).</p>
+            <p class="mya hidden">When you register with a provincial digital ID, you <strong>only</strong> need your social insurance number (SIN).</p>
             <details>
               <summary>Have your documents ready before you begin</summary>
               <p>During registration, your session will expire after 18 minutes of inactivity. Gather your documents before you begin to avoid your session timing out.</p>
@@ -252,13 +252,13 @@
               <!--<h3 class="h4">--><dt><span class="fas fa-check text-success"></span> CRA user ID and password</dt>
               <dd>This option lets you create a username and password that you <strong>only</strong> use with your CRA sign-in accounts.</dd>
               <!--<h3 class="h4">--><dt><span class="fas fa-check text-success"></span> <i>Interac</i> sign-in partner</dt>
-              <dd>This option lets you use the <strong>same</strong> sign-in information you use for other online accounts. You must already have an online account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">sign-in partner banks or credit <span class="nowrap">unions<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</dd>
+              <dd>This option lets you use the <strong>same</strong> sign-in information you use for online banking. You must already have an online account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">sign-in partner banks or credit <span class="nowrap">unions<sup><span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</dd>
               <div class="all-mya">
                 <!--<h3 class="h4" id="province">--><dt><span class="fas fa-check text-success"></span> Provincial digital ID</dt>
                 <dd>If you already have a BC Services Card or an Alberta.ca Account, you can use them to immediately access your My Account. </dd>
                 <div id="ajax-province">
                   <dd>The first time you sign in, you will need to enter your SIN to validate your identity. You will not need to use <i>Interac</i> document verification service or a CRA security code to validate your identity.</dd>
-                  <dd>You <strong>can</strong> register with your provincial digital ID even if you have not filed your taxes in the last 2 years.</dd>
+                  <dd>You <strong>can</strong> register with your provincial digital ID even if you have not filed your taxes in the last 2 years, as long as you have filed your taxes at least once in the past.</dd>
                   <dd>You <strong>cannot</strong> use your provincial digital ID to access My Business Account, Represent a Client, and certain services like Express Notice of Assessment or Auto-fill My Return. If you would like to use those accounts or services, you can still register for another sign-in option.</dd>
                 </div>
               </div>
@@ -283,22 +283,23 @@
                   <p>You must have an online account with one of our sign-in partners:</p>
                   <ul class="colcount-xs-2 mrgn-bttm-md" id="ajax-interac-partners">
                     <li>Affinity Credit Union</li>
-                    <li>ATB Financial</li>
+                    <li>Alberta Treasury Branches</li>
                     <li>BMO Financial Group</li>
-                    <li>CIBC</li>
-                    <li>Coast Capital</li>
-                    <li>Conexus</li>
-                    <li>connectFirst</li>
-                    <li>Desjardins</li>
+			  <li>Caisse Alliance</li>
+                    <li>CIBC Canadian Imperial Bank of Commerce</li>
+                    <li>Coast Capital Savings</li>
+                    <li>Conexus Credit Union</li>
+                    <li>connectFirst Credit Union</li>
+                    <li>Desjardins Group (Caisses Populaires)</li>
                     <li>Libro</li>
-                    <li>Meridian</li>
-                    <li>National Bank</li>
+                    <li>Meridian Credit Union</li>
+                    <li>National Bank of Canada</li>
                     <li>RBC Royal Bank</li>
                     <li>Scotiabank</li>
                     <li>Servus Credit Union</li>
                     <li>Simplii Financial</li>
                     <li>Tangerine</li>
-                    <li>TD Canada Trust</li>
+                    <li>TD Bank Group</li>
                     <li>Uni</li>
                     <li>Vancity</li>
                     <li>Wealthsimple</li>
@@ -327,12 +328,13 @@
                 <div class="mrgn-bttm-md"><a class="btn btn-primary btn-lg btn-block p-sm-3" href="/sign-in-prototype/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals/provincial-partner.html" target="_blank" rel="noreferrer noopener"><span class="h3"><span class="fas fa-id-card fa-lg fa-pull-left mrgn-rght-sm"></span>Register with a provincial digital ID (BC, Alberta)</span><span class="wb-inv"> (opens in a new window/tab)</span></a></div>
                 <details id="ajax-help-province" class="mrgn-tp-md">
                   <summary>Help with provincial digital ID</summary>
-                  <p>To register this way, you must have an account with one of our supported provincial partners:</p>
+                  <p>To use this option, you must have an account with one of our provincial partners:</p>
                   <ul class="mrgn-bttm-md">
                     <li>BC Services Card</li>
                     <li>Alberta.ca Account</li>
                   </ul>
-                  <div data-ajax-replace="#ajax-province"><a href="#province">Provincial sign-in partner</a></div>
+                 <div data-ajax-replace="#ajax-province"><a href="#province">Provincial sign-in partner</a></div>
+			
                   <p class="mrgn-tp-lg"><a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-provincial-partner.html">More help with provincial digital ID</a></p>
                 </details>
               </li>
@@ -408,7 +410,7 @@
               </li>
               <li class="cnjnctn-col">
                 <h3 class="h4 mrgn-tp-sm text-muted">Wait for your CRA security code <span class="wb-inv">Option 2 of 2</span></h3>
-                <p>If you can't use the document verification service, a CRA security code will be sent to you by mail within <strong>5 to 10 days</strong>.</p>
+                <p>If you can't use the document verification service, a CRA security code will be sent to you by mail within <strong>5 to 10 business days</strong>.</p>
                 <p>We will send your CRA security code to the address we have on file. <a href="/sign-in-prototype/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/change-your-address.html">Make sure your address is up to date</a>.</p>
                 <p>You will need to sign in to your account and enter your CRA security code before it expires.</p>
               </li>
@@ -619,7 +621,7 @@
       <ul class="fa-ul">
         <li><span class="fas fa-check text-success fa-li"></span>Your Canadian passport</li>
         <li><span class="fas fa-check text-success fa-li"></span>Your Canadian driver's license</li>
-        <li><span class="fas fa-check text-success fa-li"></span>Your provincial photo ID card</li>
+        <li><span class="fas fa-check text-success fa-li"></span>Your provincial or territorial photo ID card</li>
       </ul>
       <p>We do <strong>not</strong> accept:</p>
       <ul class="fa-ul">
