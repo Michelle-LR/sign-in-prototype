@@ -124,7 +124,7 @@
 </div>
 <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
   <div class="container">
-    <h1 property="name" id="wb-cont" dir="ltr" class="gc-thickline">Register<mark>ing</mark> for a CRA account</h1>
+    <h1 property="name" id="wb-cont" dir="ltr" class="gc-thickline">Register for a CRA account</h1>
     <div class="row">
       <div class="col-md-8"> 
         <!--URL mapping & FF-->
@@ -160,7 +160,7 @@
         <br-->
         <!--End of URL mapping & FF-->
         
-        <p id="register" class="mrgn-tp-md lead" tabindex="0">Follow the steps below to register for <span class="all">access to your account</span><strong class="mya hidden">My Account for individuals</strong><strong class="mba hidden">My Business Account</strong><span class="rac hidden"><strong>Represent a Client</strong> and to receive the RepID that you will share with your clients, family or friends <s>to</s> <mark>so they can</mark> authorize you as their representative</span>.</p>
+        <p id="register" class="mrgn-tp-md lead" tabindex="0">Follow the steps below to register for <span class="all">access to your account</span><strong class="mya hidden">My Account for individuals</strong><strong class="mba hidden">My Business Account</strong><span class="rac hidden"><strong>Represent a Client</strong> and to receive the RepID that you will share with your clients, family or friends so they can authorize you as their representative</span>.</p>
       </div>
     </div>
     <ol class="lst-stps ld-zr">
@@ -168,13 +168,41 @@
         <div class="row">
           <div class="col-md-8">
             <h2 class="h3 mrgn-tp-0" id="h-0">Decide if you need to register</h2>
-            <p>If you have already registered for <mark>another</mark> CRA account using a CRA user ID and password or an <i>Interac&reg</i> sign-in partner, you <strong>cannot</strong> register again. You must use the same sign-in information to access the following accounts:</p>
+            <p>If you have already registered for another CRA account using a CRA user ID and password or an <i>Interac&reg</i> sign-in partner, you <strong>cannot</strong> register again. You must use the same sign-in information to access the following accounts:</p>
             <ul>
               <li>My Account</li>
               <li>My Business Account</li>
               <li>Represent a Client</li>
             </ul>
-            <p class="mrgn-tp-md"><a href="#help-registered">If you already have an account</a></p>
+          <!--  <p class="mrgn-tp-md"><a href="#help-registered">If you already have an account</a></p>-->
+		   <details>
+            <summary id="help-registered">Already registered for an account</summary>
+            <h4>Use your existing credentials</h4>
+            <p>If you have already registered for another CRA account, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html">Sign in with your existing account credentials</a>.</p>
+		              <p>If you registered with a <strong>provincial digital ID</strong>, you must also register with a CRA user ID and password or <i>Interac</i> sign-in partner to access:
+				      <ul><li>My Business Account</li>
+					      <li>Represent a Client</li></ul>
+	  <p>If you have forgotten your CRA user ID or password, go to: <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section5">Lost or forgotten CRA user ID or password</a>.</p>
+            <details><summary>Change the option you sign in with</summary>
+            <p>If you registered with a <strong>provincial digital ID</strong>, you can also register with a CRA user ID and password or <i>Interac</i> sign-in partner.</p>
+            <p>If you registered with a <strong>CRA user ID and password</strong>, you can sign in with your CRA user ID and password and <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section8">revoke your credential</a> so you can register with a different sign-in option.</p>
+		<p>If you registered with a <strong><i>Interac</i> sign-in partner</strong>, you can sign in to your current <i>Interac</i> sign-in partner and <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-interac-partner.html#section4">switch to a different bank or credit union</a>.</p>    
+		    
+         <!--   <ul>
+              <li>Sign in to your current <i>Interac</i> sign-in partner and switch to a different bank or credit union</li>
+              <li>Sign in with your CRA user ID and password and revoke your credential so you can register again</li>
+              <li>Contact us by phone to revoke your credential so you can register again</li>
+            </ul>-->
+           <!-- <p>Find out more about <a href="">Changing your sign in information</a>.</p>-->
+          </details>
+<h4>Signing in to another account for the first time</h4>
+					      <details><summary>My Business Account</summary>
+            <p>If you are signing in to My Business Account for the first time, you will be asked for your 9-digit business number.</p></details>
+					       <details><summary>Represent a Client</summary>
+		  <p>If you are signing in to Represent a Client for the first time, you will have to register yourself or your business as a representative.</p>
+						       <p>You will also have to <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client/request-authorization.html">request authorization to access someone else's tax information</a>.</p></details>
+            
+	</details>	
           </div>
         </div>
       </li>
@@ -534,7 +562,7 @@
             <p>For information on how to file, go to <a href="https://www.canada.ca/en/services/taxes/income-tax/personal-income-tax/get-ready-taxes.html">Get ready to do your taxes</a>.</p>
             <p>If you live in British Columbia or Alberta, you may be able to register for My Account using a provincial digital ID.</p>
           </details>
-          <details>
+        <!--  <details>
             <summary id="help-registered">Already registered for an account</summary>
             <h4>Use your existing credentials</h4>
             <p>If you have already registered for an account, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html">Sign in with your existing account credentials</a>.</p>
@@ -554,36 +582,9 @@
               <li>Contact us by phone to revoke your credential so you can register again</li>
             </ul>-->
            <!-- <p>Find out more about <a href="">Changing your sign in information</a>.</p>-->
-          </details></details>
+        <!--  </details></details>-->
 
-  <details>
-            <summary id="help-registered">Already registered for an account</summary>
-            <h4>Use your existing credentials</h4>
-            <p>If you have already registered for another CRA account, <a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services.html">Sign in with your existing account credentials</a>.</p>
-		              <p>If you registered with a <strong>provincial digital ID</strong>, you must also register with a CRA user ID and password or <i>Interac</i> sign-in partner to access:
-				      <ul><li>My Business Account</li>
-					      <li>Represent a Client</li></ul>
-	  <p>If you have forgotten your CRA user ID or password, go to: <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section5">Lost or forgotten CRA user ID or password</a>.</p>
-            <details><summary>Change the option you sign in with</summary>
-            <p>If you registered with a <strong>provincial digital ID</strong>, you can also register with a CRA user ID and password or <i>Interac</i> sign-in partner.</p>
-            <p>If you registered with a <strong>CRA user ID and password</strong>, you can sign in with your CRA user ID and password and <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section8">revoke your credential</a> so you can register with a different sign-in option.</p>
-		<p>If you registered with a <strong><i>Interac</i> sign-in partner</strong>, you can sign in to your current <i>Interac</i> sign-in partner and <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-interac-partner.html#section4">switch to a different bank or credit union</a>.</p>    
-		    
-         <!--   <ul>
-              <li>Sign in to your current <i>Interac</i> sign-in partner and switch to a different bank or credit union</li>
-              <li>Sign in with your CRA user ID and password and revoke your credential so you can register again</li>
-              <li>Contact us by phone to revoke your credential so you can register again</li>
-            </ul>-->
-           <!-- <p>Find out more about <a href="">Changing your sign in information</a>.</p>-->
-          </details>
-<h4>Signing in to another account for the first time</h4>
-					      <details><summary>My Business Account</summary>
-            <p>If you are signing in to My Business Account for the first time, you will be asked for your 9-digit business number.</p></details>
-					       <details><summary>Represent a Client</summary>
-		  <p>If you are signing in to Represent a Client for the first time, you will have to register yourself or your business as a representative.</p>
-						       <p>You will also have to <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/represent-a-client/request-authorization.html">request authorization to access someone else's tax information</a>.</p></details>
-            
-	</details>	
+ 
         </div>
         <div class="col-sm-6">
           <details>
