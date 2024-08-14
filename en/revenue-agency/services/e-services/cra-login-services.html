@@ -223,7 +223,7 @@
   <div class="well brdr-0 brdr-rds-0">
     <section class="container">
       <h2 class="mrgn-tp-0">Help centre</h2>
- <h3 class="h5">Common issues with signing in</h3>
+ <h3 class="h5 wb-inv">Common issues</h3>
       <div class="row">
         <div class="col-sm-6">
         <!--  <details>
@@ -253,18 +253,20 @@
           </details>-->
 
  <details id="ajax-forgotten-password-userID">
-            <summary>Forgotten password or CRA user ID</summary>
+            <summary>You forgot your password or CRA user ID</summary>
             <!--This is the same for MyA, MyBA, and RAC but not Candidiate profile-->
-	 <p>You can recover your CRA user ID or password online, as long as you can answer the security questions you set up during registration.</p>
+	 <p>You can recover your CRA user ID or password online.</p>
             <details><summary>Password</summary>
 		  <p>If you have forgotten your password:</p>
             
 		  <ol class="">
 			  <li>Select your account</li>
 		  <li>Select <strong>CRA user ID and password</strong> from the sign-in options</li> 
-			  <li>Select <strong>Forgot your password?</strong></li></li>
+			  <li>Select <strong>Forgot your password?</strong></li>
+			  <li>Enter your CRA user ID</li>
+			  <li>Answer the security questions you set up during registration</li>
 		  </ol>
-	      <p>You will need to provide your CRA user ID.</p>
+	      
 	    </details>
 
 	 <details><summary>User ID</summary>
@@ -273,7 +275,7 @@
 			 <li>Select your account</li>
 		  <li>Select <strong>CRA user ID and password</strong> from the sign-in options</li> 
 			  <li>Select <strong>Forgot your user ID?</strong></li></li>
-		
+		<li>Answer the security questions you set up during registration</li>
 		</ol>
 		 
 		 <p>You will need to provide:</p>
@@ -307,7 +309,7 @@
             <p class="mrgn-tp-md"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/multi-factor-authentication-access-cra-login-services.html">More help with multi-factor authentication</a></p>
           </details>-->
           
-		<details id="ajax-did-not-receive-passcode"><summary>Did not receive one-time passcode</summary>
+		<details id="ajax-did-not-receive-passcode"><summary>You did not receive your one-time passcode</summary>
 			<h3 class="h5">If you have a new phone number</h3>
 			<p>If you can no longer access your old phone number, and you have not already added your new phone number to your multi-factor authentication (MFA) options, you will have to <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a>.</p>
 			<h3 class="h5">Authenticator app and passcode grid</h3>
@@ -318,14 +320,22 @@
 
 		</details>
 		<details id="ajax-expired-security-code">
-            <summary>Expired CRA security code</summary>
+            <summary>Your CRA security code expired</summary>
             <p class="mrgn-tp-md">If your CRA security code expires, has been lost, or has not arrived after waiting 10 business days, you may choose instead to use the <i>Interac&reg</i> document verification service to validate your identity.</p>
 		   <p>If you prefer to receive another CRA security code by mail, you can <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a> to get a new one.</p>
           </details>
+
+		<details id="ajax-change-information">
+            <summary>Update your information</summary>
+          <p>Inform the CRA about changes to your direct deposit or contact information, such as address, phone number or name changes.</p>
+			<a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/update-information.html">Update your information with the CRA</a>
+          </details>
+
+		
         </div>
         <div class="col-sm-6">
           <details id="ajax-recover-locked-account">
-            <summary>Recover a locked account</summary>
+            <summary>Your account is locked</summary>
             <p class="mrgn-tp-md">Your account will become locked if you enter the wrong information too many times for any of the following:</p>
             <ul>
               <li>CRA user ID and password</li>
@@ -336,7 +346,7 @@
             <p>If your account becomes locked, <a href="/sign-in-prototype/en/revenue-agency/corporate/contact-information.html#assistance">contact us by phone</a> to have your account unlocked.</p>
           </details>
           <details id="ajax-revoked">
-            <summary>Revoked CRA user ID and password</summary>
+            <summary>Your CRA user ID and password was revoked</summary>
             <p class="mrgn-tp-md">If your CRA user ID and password have been revoked, you can regain access to your account in either of the following ways:</p>
 			  
             <ul>
