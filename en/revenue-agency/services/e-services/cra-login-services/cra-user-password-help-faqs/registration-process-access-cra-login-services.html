@@ -182,7 +182,7 @@
 		              <p>If you registered with a <strong>provincial partner</strong>, you must also create a CRA user ID and password or use a Sign-In Partner to access:
 				      <ul><li>My Business Account</li>
 					      <li>Represent a Client</li></ul>
-	  <p>If you have forgotten your CRA user ID or password, go to: <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section5">Lost or forgotten CRA user ID or password</a>.</p>
+	  <p class="mrgn-tp-lg">If you have forgotten your CRA user ID or password, go to: <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section5">Lost or forgotten CRA user ID or password</a>.</p>
             <details><summary>Change the option you sign in with</summary>
             <p>If you registered with a <strong>provincial partner</strong>, you can also create a CRA user ID and password or use a Sign-In Partner.</p>
             <p>If you registered with a <strong>CRA user ID and password</strong>, you can sign in with your CRA user ID and password and <a href="https://cra-proto.github.io/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/about-cra-userID-password.html#section8">revoke your credential</a> so you can register with a different sign-in option.</p>
@@ -232,7 +232,7 @@
                 </ul></details>
               </li>
               <li><span class="fas fa-check text-success fa-li"></span>Your date of birth</li>
-              <li><span class="fas fa-check text-success fa-li"></span>The amounts you <strong>reported</strong> on your most recent tax return <!--from the current or previous tax year-->
+              <li><span class="fas fa-check text-success fa-li"></span>Amounts you <strong>reported</strong> on your most recent tax return <!--from the current or previous tax year-->
              <!--   <details>
                   <summary>Find out which tax information we will ask for</summary>
                   <p>We will ask you to enter the amounts you reported on 2 different line numbers of your <strong>most recent</strong> tax return.</p>
@@ -248,26 +248,26 @@
                   <p>Use only the amounts that you <strong>reported</strong> on your return, even if your return was reassessed and the amounts have changed.</p>
                 </details>-->
 		      <details><summary>Which tax return you can use</summary>
-			      <p>The tax return you use must meet <strong>both</strong> of the following conditions:</p>
+			      <p>The tax and benefit return you use must meet <strong>both</strong> of the following conditions:</p>
 			<ul class="mrgn-bttm-md">
 				<li>It was filed and assessed</li>
 				<li>It is from either the current or previous tax year</li></ul>
                   <p>Use only the amounts that you <strong>reported</strong> on your return, even if your return was reassessed and the amounts have changed.</p>
 		      </details>
               </li>
-              <li class="all-mba"><span class="fas fa-check text-success fa-li"></span><span class="all">If you are registering for a My Business Account you also need your </span>9-digit business number
+              <li class="all-mba"><span class="fas fa-check text-success fa-li"></span><span class="all">If you are registering for My Business Account you also need your </span>9-digit business number
                 <ul>
                   <li>You cannot use a 10-digit Québec Enterprise Number (NEQ)</li>
                 </ul>
               </li>
             </ul>
-            <p class="mrgn-tp-md">For faster access to all features, you will also need a mobile device with a working camera and <strong>one</strong> of the following:</p>
+            <p class="mrgn-tp-md">For faster access to the CRA sign-in services, you will also need a mobile device with a working camera and <strong>one</strong> of the following:</p>
             <ul class="mrgn-bttm-md">
               <li>Your Canadian passport</li>
               <li>Your Canadian driver's license</li>
               <li>Your provincial or territorial photo ID card</li>
             </ul>
-            <p class="mya hidden">When you register with a provincial sign-in partner, you <strong>only</strong> need your SIN.</p>
+            <p class="mya hidden">When you register with a provincial partner, you <strong>only</strong> need your SIN.</p>
             <details>
               <summary>Have your documents ready before you begin</summary>
               <p>During registration, your session will expire after 18 minutes of inactivity. Gather your documents before you begin to avoid your session timing out.</p>
@@ -285,11 +285,13 @@
              <!-- <p>You can choose one of 3 ways to sign in<!-- to your account.</p>-->
 		    <p>Learn more about the sign-in options<!-- for your account-->:</p>
 		    <dl class="">
+			    <!--<h3 class="h4">--><dt><span class="fas fa-check text-success"></span> Sign-In Partner</dt>
+              <dd>This option lets you use the <strong>same</strong> banking sign-in information you use with other online financial accounts. You must already have an online account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">Sign-In Partners<span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</dd>
+             
               <!--<h3 class="h4">--><dt><span class="fas fa-check text-success"></span> CRA user ID and password</dt>
               <dd>This option lets you create a username and password that you <!--<strong>only</strong> -->use with the CRA sign-in services.</dd>
-              <!--<h3 class="h4">--><dt><span class="fas fa-check text-success"></span> Sign-In Partner</dt>
-              <dd>This option lets you use the <strong>same</strong> sign-in information you use for online banking. You must already have an online account with one of our <a class="wb-lbx" role="button" aria-controls="sign-in-partners" href="#sign-in-partners">Sign-In Partners<span class="mrgn-lft-xs far fa-question-circle"></span></sup></span></a>.</dd>
-              <div class="all-mya">
+              
+			    <div class="all-mya">
                 <!--<h3 class="h4" id="province">--><dt><span class="fas fa-check text-success"></span> Provincial partner</dt>
                 <dd>If you already have a BC Services Card or an Alberta.ca Account, you can use them to immediately access your My Account. </dd>
                 <div id="ajax-province">
@@ -299,7 +301,7 @@
                 </div>
               </div>
               <!--<h3 class="h4">--><dt><span class="fas fa-times text-danger"></span> GC Key</dt>
-              <dd class="mrgn-tp-md">You <strong>cannot</strong> use GC Key to sign in to the CRA sign-in services. </dd></dl>
+              <dd class="mrgn-tp-md">You <strong>cannot</strong> use GC Key to sign in to the CRA sign-in services.</br>You can use GC Key to sign in to other Government of Canada accounts. </dd></dl>
             </details>
             <ul class="cnjnctn-type-or brdr-0 col-md-10 mya mba rac hidden">
 		     <li class="cnjnctn-col">
@@ -602,15 +604,15 @@
       <div class="row gc-srvinfo mrgn-tp-lg">
         <div class="col-sm-6 all">
           <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html">Help with using the CRA sign-in services</a></h3>
-          <p>How to register, manage and update your information, use multifactor authentication (MFA)</p>
+          <p>How to register, manage and update your information, use multi-factor authentication (MFA)</p>
         </div>
         <div class="col-sm-6 mya hidden">
           <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html?type=myacct">Help with using My Account</a></h3>
-          <p>How to register and manage My Account, update your information, use multifactor authentication (MFA)</p>
+          <p>How to register and manage My Account, update your information, use multi-factor authentication (MFA)</p>
         </div>
         <div class="col-sm-6 mba hidden">
           <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html?type=mybusacct">Help with using My Business Account</a></h3>
-          <p>How to register, manage and update your information, use multifactor authentication (MFA)</p>
+          <p>How to register, manage and update your information, use multi-factor authentication (MFA)</p>
         </div>
         <div class="col-sm-6 rac hidden">
           <h3 class="mrgn-tp-0"><a href="/sign-in-prototype/en/revenue-agency/services/e-services/cra-login-services/cra-user-password-help-faqs.html?type=rac">Help with using Represent a Client</a></h3>
