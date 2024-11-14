@@ -129,9 +129,9 @@
       <div class="col-md-8"> 
         <!--URL mapping & FF-->
         <div data-wb-urlmapping='{
-		"account=mya": [{ "action": "selectInput", "source": "#accountOptions", "value": "My Account for individuals" },{ "action": "removeClass", "source": ".mya", "class": "hidden" },{ "action": "addClass", "source": ".all,.all-mba,.all-rac, #btn-select", "class": "hidden" }],
-		"account=mba": [{ "action": "selectInput", "source": "#accountOptions", "value": "My Business Account" },{ "action": "removeClass", "source": ".mba", "class": "hidden" },{ "action": "addClass", "source": ".all,.all-mya,.all-rac, #btn-select", "class": "hidden" }],
-		"account=rac": [{ "action": "selectInput", "source": "#accountOptions", "value": "Represent a Client" },{ "action": "removeClass", "source": ".rac", "class": "hidden" },{ "action": "addClass", "source": ".all,.all-mya,.all-mba, #btn-select", "class": "hidden" }]
+		"account=mya": [{ "action": "selectInput", "source": "#accountOptions", "value": "My Account for individuals" },{ "action": "removeClass", "source": ".mya", "class": "hidden" },{ "action": "addClass", "source": ".all,.mba,.all-mba,.rac,.all-rac, #btn-select", "class": "hidden" }],
+		"account=mba": [{ "action": "selectInput", "source": "#accountOptions", "value": "My Business Account" },{ "action": "removeClass", "source": ".mba", "class": "hidden" },{ "action": "addClass", "source": ".all,.mya,.all-mya,.rac,.all-rac, #btn-select", "class": "hidden" }],
+		"account=rac": [{ "action": "selectInput", "source": "#accountOptions", "value": "Represent a Client" },{ "action": "removeClass", "source": ".rac", "class": "hidden" },{ "action": "addClass", "source": ".all,.mya,.all-mya,.mba,.all-mba, #btn-select", "class": "hidden" }]
 	}'></div>
         <div class="wb-frmvld gc-font-2019">
           <form id="accountOptions">
